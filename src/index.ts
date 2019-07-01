@@ -10,7 +10,7 @@
 import NativeInterface from './internal/nativeInterface';
 import {ImagePickerOptions, ImagePickerResponse} from './internal/types';
 
-const DEFAULT_OPTIONS = {
+const DEFAULT_OPTIONS: ImagePickerOptions = {
   title: 'Select a Photo',
   cancelButtonTitle: 'Cancel',
   takePhotoButtonTitle: 'Take Photo…',

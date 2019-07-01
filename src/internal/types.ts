@@ -48,6 +48,7 @@ export interface ImagePickerOptions {
   allowsEditing?: boolean;
   noData?: boolean;
   storageOptions?: ImagePickerStorageOptions;
+  permissionDenied?: ImagePickerPermissionDeniedOptions;
 }
 
 export interface ImagePickerStorageOptions {
@@ -55,4 +56,11 @@ export interface ImagePickerStorageOptions {
   path?: string;
   cameraRoll?: boolean;
   waitUntilSaved?: boolean;
+}
+
+export interface ImagePickerPermissionDeniedOptions {
+  title: string;
+  text: string;
+  reTryTitle: string;
+  okTitle: string;
 }
