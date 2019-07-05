@@ -367,13 +367,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
     responseHelper.cleanResponse();
 
     // user cancel
-    if (resultCode != Activity.RESULT_OK)
-    {
-      removeUselessFiles(requestCode, imageConfig);
-      responseHelper.invokeCancel(callback);
-      callback = null;
-      return;
-    }
+  
 
     Uri uri = null;
     switch (requestCode)
